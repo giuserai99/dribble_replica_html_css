@@ -100,6 +100,62 @@ nav {
     font-weight: bold;
 }
 
+/* 03 */
+.jumbo {
+    padding: 24px;
+    background-color: #F8F7F4;
+}
+
+.jumbo_upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.badge {
+    width: 333px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #EFB1EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge span {
+    font-weight: 600;
+}
+
+.jumbo_upper h1 {
+    padding: 40px 0 24px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.jumbo_upper p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn2 {
+    width: 150px;
+    height: 58px;
+    border-radius: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px
+}
+
+.btn2 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
 
 
 /* XX */
@@ -137,6 +193,10 @@ nav {
         color: black;
         font-weight: 600;
         margin-right: 16px;
+    }
+
+    .jumbo_upper h1 {
+        font-size: 65px;
     }
 }
 
@@ -183,4 +243,7 @@ nav {
         width: 90px;
     }
 
+    .jumbo_upper h1 {
+        font-size: 80px;
+    }
 }
