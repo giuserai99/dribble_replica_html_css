@@ -157,6 +157,51 @@ nav {
     font-weight: bold;
 }
 
+/* Jumbo_lower */
+.jumbo_lower {
+    width: 100vw;
+    height: 484px;
+    padding: 72px 0;
+    display: flex;
+}
+
+
+.box{
+    width: 135px;
+    height: 180px;
+    border-radius: 20px;
+    margin-right: 20px; 
+}
+
+.item1 {
+    background-image: url(assets/image/persona1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item2 {
+    background-image: url(assets/image/persona2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item3 {
+    background-image: url(assets/image/persona3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item4 {
+    background-image: url(assets/image/persona4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item5 {
+    background-image: url(assets/image/persona5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* XX */
 @media screen and (min-width: 950px) {
@@ -197,6 +242,11 @@ nav {
 
     .jumbo_upper h1 {
         font-size: 65px;
+    }
+
+    .box {
+        width: 160px;
+        height: 220px;
     }
 }
 
@@ -245,5 +295,10 @@ nav {
 
     .jumbo_upper h1 {
         font-size: 80px;
+    }
+
+    .box {
+        width: 273px;
+        height: 340px;
     }
 }
