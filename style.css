@@ -28,6 +28,7 @@ header {
     background-color: #F8F7F4;
 }
 
+
 nav {
     width: 100vw;
     height: 100px;
@@ -159,51 +160,130 @@ nav {
 
 /* Jumbo_lower */
 .jumbo_lower {
-    width: 100vw;
-    height: 484px;
     padding: 72px 0;
     display: flex;
+    position: relative;
+    animation: marquee 15s ease-in-out infinite;
 }
-
 
 .box{
-    width: 135px;
-    height: 180px;
-    border-radius: 20px;
-    margin-right: 20px; 
+    width: 100px;
+    height: 160px;
+    border-radius: 10px; 
+    margin-right: 16px;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
 }
+/* Testo dentro le card */
+.box span {
+    margin-left: 10px;
+    margin-bottom: 7px;
+    font-size: 13px;
+}
+
+.box ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.box ul li {
+    list-style: none;
+    width: 60px;
+    height: 20px;
+    font-size: 11px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.5px inset white;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
 
 .item1 {
     background-image: url(assets/image/persona1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .item2 {
     background-image: url(assets/image/persona2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .item3 {
     background-image: url(assets/image/persona3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .item4 {
     background-image: url(assets/image/persona4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .item5 {
     background-image: url(assets/image/persona5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+
+/* 04 */
+main {
+    background-color: #F8F7F4;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.containerDesigns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.design {
+    width: 310px;
+    height: 232px;
+    border-radius: 10px;
+    margin: 15px;
+    border: 2px solid red;
+}
+
+.unit1 {
+    background-image: url(assets/image/img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* XX */
+@media screen and (min-width: 768px) {
+    /* Ridimensionamento card */
+    .box{
+        width: 273px;
+        height: 340px;
+        border-radius: 32px;
+    }
+}
+
+
 @media screen and (min-width: 950px) {
     .hamburger {
         display: none;
@@ -244,10 +324,6 @@ nav {
         font-size: 65px;
     }
 
-    .box {
-        width: 160px;
-        height: 220px;
-    }
 }
 
 @media screen and (min-width: 1060px) {
@@ -297,8 +373,15 @@ nav {
         font-size: 80px;
     }
 
-    .box {
-        width: 273px;
-        height: 340px;
+
+}
+
+/* Scorrimento card */
+@keyframes marquee {
+    0% {
+        left:0;
+    }
+    100% {
+        left: -100%;
     }
 }
