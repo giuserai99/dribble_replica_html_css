@@ -155,7 +155,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 32px
+    margin-top: 32px;
 }
 
 .btn2 a {
@@ -171,9 +171,6 @@ nav {
 /* Jumbo_lower */
 .jumbo_lower {
     padding: 72px 0;
-    display: flex;
-    position: relative;
-    animation: marquee 15s ease-in-out infinite;
 }
 
 .box{
@@ -183,22 +180,30 @@ nav {
     margin-right: 16px;
     color: #fff;
     font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: end;
+    display: inline-block;
+    position: relative;
 }
 /* Testo dentro le card */
-.box span {
+.box .name {
+    position: absolute;
+    bottom: 60px;
     margin-left: 10px;
-    margin-bottom: 7px;
+    font-size: 13px;
+}
+
+.box .job {
+    position: absolute;
+    bottom: 40px;
+    margin-left: 10px;
     font-size: 13px;
 }
 
 .box ul {
+    position: absolute;
     display: flex;
     justify-content: start;
     align-items: center;
+    bottom: 15px;
 }
 
 .box ul li {
@@ -211,7 +216,7 @@ nav {
     border-radius: 15px;
     text-align: center;
     margin-left: 10px;
-    margin-bottom: 10px;
+    
 }
 
 
@@ -421,7 +426,7 @@ h2 {
     align-items: center;
     padding: 0 32px;
 }
-
+/* TODO: completare */
 .textPreFooter {
     width: 100vw;
     height: 456px;
@@ -434,6 +439,69 @@ h2 {
 .preFooter .textPreFooter h2 {
     font-size: 60px;
     font-weight: 600;
+}
+
+.textPreFooter p {
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.btn4 {
+    width: 150px;
+    height: 58px;
+    border-radius: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-right: 20px;
+}
+
+.btn4 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.btn5 {
+    width: 150px;
+    height: 58px;
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.btn5 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.textPreFooter span a {
+    color: black;
+}
+
+/* 06 */
+.footer {
+    width: 100vw;
+}
+
+.layout {
+    display: inline-block;
+    width: 200px;
+    height: 140px;
+    margin: 20px;
+    border: 2px solid red;
 }
 
 
@@ -538,14 +606,4 @@ h2 {
     }
 
 
-}
-
-/* Scorrimento card */
-@keyframes marquee {
-    0% {
-        left:0;
-    }
-    100% {
-        left: -100%;
-    }
 }
