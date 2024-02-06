@@ -8,6 +8,7 @@ Indice:
 02-Header
 03-Jumbo
 04-Main
+05-Prefooter
 XX- Media Queries
 */
 
@@ -101,6 +102,10 @@ nav {
     font-weight: bold;
 }
 
+.btn1:hover {
+    opacity: 0.7;
+}
+
 /* 03 */
 .jumbo {
     padding: 24px;
@@ -115,6 +120,7 @@ nav {
     padding-top: 80px;
 }
 
+/* TODO: animazione badge */
 .badge {
     width: 333px;
     height: 40px;
@@ -156,6 +162,10 @@ nav {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+}
+
+.btn2:hover {
+    opacity: 0.7;
 }
 
 /* Jumbo_lower */
@@ -262,8 +272,40 @@ h2 {
     width: 310px;
     height: 232px;
     border-radius: 10px;
-    margin: 15px;
-    border: 2px solid red;
+    margin: 20px;
+    position: relative;
+}
+/* TODO: design hover da sistemare */
+.design:hover {
+    opacity: 0.5;
+}
+
+.author {
+    position: absolute;
+    bottom: -20px;
+}
+
+.author i {
+    margin-right: 5px;
+}
+
+.author span {
+    font-size: 13px;
+}
+
+.views {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    font-size: 14px;
+}
+
+.views i {
+    margin-right: 2px;
+}
+
+.views span {
+    font-size: 12px;
 }
 
 .unit1 {
@@ -272,6 +314,128 @@ h2 {
     background-size: cover;
     background-position: center;
 }
+
+.unit2 {
+    background-image: url(assets/image/img-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unit3 {
+    background-image: url(assets/image/img-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unit4 {
+    background-image: url(assets/image/img-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unit5 {
+    background-image: url(assets/image/img-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unit6 {
+    background-image: url(assets/image/img-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unit7 {
+    background-image: url(assets/image/img-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unit8 {
+    background-image: url(assets/image/img-8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unit9 {
+    background-image: url(assets/image/img-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unit10 {
+    background-image: url(assets/image/img-10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unit11 {
+    background-image: url(assets/image/img-11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unit12 {
+    background-image: url(assets/image/img-12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.btn3 {
+    margin: 70px 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn3 a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* 05 */
+.preFooter {
+    background-color: #ffda79;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.textPreFooter {
+    width: 100vw;
+    height: 456px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.preFooter .textPreFooter h2 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
 
 /* XX */
 @media screen and (min-width: 768px) {
