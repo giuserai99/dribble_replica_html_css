@@ -129,6 +129,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: changeBadge 10s ease-in-out infinite;
 }
 
 .badge span {
@@ -419,7 +420,7 @@ h2 {
 /* 05 */
 .preFooter {
     background-color: #ffda79;
-    width: 100vw;
+    width: 100%;
     height: 700px;
     display: flex;
     justify-content: center;
@@ -428,7 +429,7 @@ h2 {
 }
 /* TODO: completare */
 .textPreFooter {
-    width: 100vw;
+    width: 100%;
     height: 456px;
     display: flex;
     
@@ -505,7 +506,7 @@ h2 {
 
 /* 06 */
 .footer {
-    width: 100vw;
+    width: 100%;
 }
 
 .layout {
@@ -696,4 +697,31 @@ h2 {
         font-size: 80px;
     }
 
+}
+
+
+@keyframes changeBadge {
+    100% {
+        background-color: #EFB1EB;  
+    }
+
+    80% {
+        background-color: #E4B5EE;
+    }
+
+    60% {
+        background-color: #FEDB7E;
+    }
+
+    40% {
+        background-color: #F4EAB4;
+    }
+
+    20% {
+        background-color: #F1EEC5;
+    }
+
+    0% {
+        background-color: #EFB1EB;
+    }
 }
